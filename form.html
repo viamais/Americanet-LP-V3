@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="stylesheet" href="./css/plugins.css" />
+		<link rel="stylesheet" href="./css/main.css" />
+		<title>Americanet</title>
+
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+		<link rel="shortcut icon" href="/favicon.png" type="image/x-icon" />
+	</head>
+	<body>
+		<header class="header__formulario">
+			<div class="container">
+				<div class="logo">
+					<img
+						src="./img/logo-americanet-agenteautorizado.svg"
+						alt="Logo Americanet"
+					/>
+				</div>
+			</div>
+		</header>
+		<section class="s-formulario">
+			<div class="container">
+				<div class="first-column">
+					<div class="stepper-container">
+						<div class="step-indicators">
+							<div class="step">
+								<div class="step-bullet active" data-step="1">1</div>
+								<p class="step-text">Dados pessoais</p>
+							</div>
+
+							<div class="step">
+								<div class="step-bullet" data-step="2">2</div>
+								<p class="step-text address">Endereço</p>
+							</div>
+
+							<div class="step">
+								<div class="step-bullet" data-step="3">3</div>
+								<p class="step-text pay">Forma de pagamento</p>
+							</div>
+						</div>
+						<div class="step-content">
+							<form id="form-1" class="step-form">
+								<h3>Seus dados pessoais</h3>
+								<!-- Adicione campos do formulário aqui -->
+								<!-- dados pessoais -->
+								<div class="step-form__grid">
+									<div class="form-group">
+										<label for="name">Nome*</label>
+										<input
+											type="text"
+											name="name"
+											id="name"
+											placeholder="Seu nome completo"
+											data-required="true"
+										/>
+									</div>
+
+									<div class="form-group">
+										<label for="cpf">CPF*</label>
+										<input
+											type="text"
+											name="cpf"
+											id="cpf"
+											placeholder="Seu CPF"
+											data-required="true"
+										/>
+									</div>
+									<div class="form-group">
+										<label for="email">E-mail*</label>
+										<input
+											type="email"
+											name="email"
+											id="email"
+											placeholder="Seu melhor e-mail"
+											data-required="true"
+										/>
+									</div>
+									<div class="form-group">
+										<label for="phone">Telefone principal*</label>
+										<input
+											type="tel"
+											name="phone"
+											id="phone"
+											placeholder="Seu melhor telefone"
+											data-required="true"
+										/>
+									</div>
+									<div class="form-group">
+										<label for="phone2">Telefone adicional</label>
+										<input
+											type="tel"
+											name="phone2"
+											id="phone2"
+											placeholder="Telefone adicional"
+										/>
+									</div>
+
+									<div class="form-group">
+										<label for="birth">Data de nascimento*</label>
+										<input
+											type="date"
+											name="birth"
+											id="birth"
+											data-required="true"
+										/>
+									</div>
+								</div>
+							</form>
+							<form id="form-2" class="step-form">
+								<h3>Seu endereço</h3>
+								<!-- campos do formulário de endereço aqui -->
+								<div class="step-form__grid">
+									<div class="form-group">
+										<label for="street">Rua*</label>
+										<input
+											type="text"
+											name="street"
+											id="street"
+											placeholder="O nome da rua da instalação"
+											data-required="true"
+										/>
+									</div>
+									<div class="form-group">
+										<label for="number">Número</label>
+										<input
+											type="text"
+											name="number"
+											id="number"
+											placeholder="O número do local"
+										/>
+									</div>
+									<div class="form-group">
+										<label for="complement">Complemento</label>
+										<input
+											type="text"
+											name="complement"
+											id="complement"
+											placeholder="Possui complemento? (opcional)"
+											data-required="true"
+										/>
+									</div>
+									<div class="form-group">
+										<label for="neighborhood">Bairro*</label>
+										<input
+											type="text"
+											name="neighborhood"
+											id="neighborhood"
+											placeholder="Seu bairro"
+											data-required="true"
+										/>
+									</div>
+									<div class="form-group">
+										<label for="city">Cidade*</label>
+										<input
+											type="text"
+											name="city"
+											id="city"
+											placeholder="Sua cidade"
+											data-required="true"
+										/>
+									</div>
+									<div class="form-group">
+										<label for="state">Estado*</label>
+										<select name="state" id="state" data-required="true">
+											<option value="" disabled selected>
+												Selecione o estado
+											</option>
+											<option value="AC">AC</option>
+											<option value="AL">AL</option>
+											<option value="AP">AP</option>
+											<option value="AM">AM</option>
+											<option value="BA">BA</option>
+											<option value="CE">CE</option>
+											<option value="DF">DF</option>
+											<option value="ES">ES</option>
+											<option value="GO">GO</option>
+											<option value="MA">MA</option>
+											<option value="MT">MT</option>
+											<option value="MS">MS</option>
+											<option value="MG">MG</option>
+											<option value="PA">PA</option>
+											<option value="PB">PB</option>
+											<option value="PR">PR</option>
+											<option value="PE">PE</option>
+											<option value="PI">PI</option>
+											<option value="RJ">RJ</option>
+											<option value="RN">RN</option>
+											<option value="RS">RS</option>
+											<option value="RO">RO</option>
+											<option value="RR">RR</option>
+											<option value="SC">SC</option>
+											<option value="SP">SP</option>
+											<option value="SE">SE</option>
+											<option value="TO">TO</option>
+										</select>
+									</div>
+									<div class="form-group">
+										<label for="zipcode">CEP*</label>
+										<input
+											type="text"
+											name="zipcode"
+											id="zipcode"
+											placeholder="00000-00"
+											data-required="true"
+										/>
+									</div>
+									<div class="form-group">
+										<label for="reference">Referência</label>
+										<input
+											type="text"
+											name="reference"
+											id="reference"
+											placeholder="Ponto de referência (opcional)"
+										/>
+									</div>
+								</div>
+							</form>
+							<form id="form-3" class="step-form">
+								<h3>Sua forma de pagamento</h3>
+								<div class="step-form__grid">
+									<div class="form-group">
+										<label for="payment-method">Forma de pagamento</label>
+										<select
+											name="payment-method"
+											id="payment-method"
+											data-required="true"
+										>
+											<option value="">Selecione uma opção</option>
+											<option value="debit">Débito</option>
+											<option value="boleto">Boleto</option>
+										</select>
+									</div>
+
+									<div class="form-group">
+										<label for="due-date">Dia de vencimento</label>
+										<select name="due-date" id="due-date" data-required="true">
+											<option value="">Selecione um dia</option>
+											<option value="02">02</option>
+											<option value="07">07</option>
+											<option value="11">11</option>
+											<option value="16">16</option>
+											<option value="20">20</option>
+											<option value="26">26</option>
+										</select>
+									</div>
+								</div>
+								<!-- Adicione campos do formulário aqui -->
+							</form>
+							<p class="required-forms">*Campos obrigatórios</p>
+							<div class="btn-group-mobile">
+								<button type="button" class="next-button btn-filled azul w100">
+									Continuar
+								</button>
+								<button
+									type="submit"
+									class="submit-button btn-filled azul w100"
+								>
+									Enviar
+								</button>
+								<button type="button" class="previous-button btn-outlined">
+									Anterior
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="second-column">
+					<div class="second-column__card">
+						<h2>Meu plano escolhido</h2>
+						<div class="card-plano-tiny">
+							<div class="first-row">
+								<div class="icon">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="54"
+										height="54"
+										viewBox="0 0 54 54"
+										fill="none"
+									>
+										<path
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											d="M27.3682 45.3592C24.5633 45.3592 22.2994 43.0952 22.2994 40.2906C22.2994 37.4858 24.5633 35.2218 27.3682 35.2218C30.1728 35.2218 32.4368 37.4858 32.4368 40.2906C32.4368 43.0952 30.1728 45.3592 27.3682 45.3592Z"
+											fill="#FF6E27"
+										/>
+										<mask
+											id="mask0_566_9580"
+											style="mask-type: luminance"
+											maskUnits="userSpaceOnUse"
+											x="2"
+											y="8"
+											width="51"
+											height="25"
+										>
+											<path
+												fill-rule="evenodd"
+												clip-rule="evenodd"
+												d="M2.02499 8.77502H52.65V32.6877H2.02499V8.77502Z"
+												fill="white"
+											/>
+										</mask>
+										<g mask="url(#mask0_566_9580)">
+											<path
+												fill-rule="evenodd"
+												clip-rule="evenodd"
+												d="M11.2292 28.1553L15.8316 32.6876C22.1827 26.4333 32.4918 26.4333 38.8429 32.6876L43.4452 28.1553C34.5628 19.4083 20.1346 19.4083 11.2292 28.1553ZM2.02499 19.091L6.62706 23.6231C18.0638 12.361 36.6111 12.361 48.0475 23.6231L52.6501 19.091C38.682 5.33605 16.0158 5.33605 2.02499 19.091Z"
+												fill="#173DAA"
+											/>
+										</g>
+									</svg>
+									<p>Internet</p>
+								</div>
+								<div class="text">
+									<h3>300 Mega</h3>
+									<p>Internet fibra 600 Mega</p>
+								</div>
+							</div>
+							<div class="second-row">
+								<div class="price">
+									<h3>
+										<div class="price__currency">R$</div>
+										<div class="price__integer">99</div>
+										<div class="price__decimal">
+											<span>,90</span><span>/mês</span>
+										</div>
+									</h3>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<button type="button" class="next-button btn-filled azul w100">
+						Continuar
+					</button>
+					<button type="submit" class="submit-button btn-filled azul w100">
+						Enviar
+					</button>
+					<button type="button" class="previous-button btn-outlined">
+						Anterior
+					</button>
+				</div>
+			</div>
+		</section>
+		<footer class="footer__formulario">
+			<div class="container">
+				<div class="footer__logo">
+					<img src="./img/logo-americanet.svg" alt="Logo da Americanet" />
+				</div>
+				<div class="footer__card">
+					<h3>Dúvidas?</h3>
+					<p>0800 721 066</p>
+				</div>
+			</div>
+		</footer>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+		<script>
+			$(document).ready(function () {
+				var currentStep = 1;
+				var forms = $('form.step-form');
+
+				function updateStep() {
+					$('.step-indicators .step-bullet').removeClass('current');
+					$(
+						".step-indicators .step-bullet[data-step='" + currentStep + "']"
+					).addClass('current');
+
+					forms.hide();
+					$('#form-' + currentStep).show();
+
+					$('.next-button, .previous-button, .submit-button').hide();
+
+					if (currentStep > 1) {
+						$('.previous-button').show();
+					}
+
+					if (currentStep < forms.length) {
+						$('.next-button').show();
+					} else {
+						$('.submit-button').show();
+					}
+
+					$('.step-indicators .step-bullet').each(function () {
+						if ($(this).data('step') <= currentStep) {
+							$(this).addClass('active');
+						} else {
+							$(this).removeClass('active');
+						}
+					});
+				}
+
+				$('.next-button').click(function () {
+					currentStep++;
+					updateStep();
+				});
+
+				$('.previous-button').click(function () {
+					currentStep--;
+					updateStep();
+				});
+
+				// mostrar o primeiro formulário no início
+				updateStep();
+			});
+		</script>
+		<script src="js/plugins.js"></script>
+		<script src="js/all.js"></script>
+	</body>
+</html>
