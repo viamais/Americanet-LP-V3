@@ -1028,8 +1028,12 @@
 
     <script>
       $(document).ready(function () {
-        var showModal = true;
+        var initialTimeoutDuration = 30000; // 30 segundos em milissegundos
         var timeoutDuration = 60000; // 1 minuto em milissegundos
+
+        setTimeout(function () {
+          showModal = true;
+        }, initialTimeoutDuration);
 
         $(document).on("mouseleave", function () {
           if (showModal) {
