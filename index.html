@@ -186,7 +186,7 @@
                 </div>
                 <div class="text">
                   <h3>300 Mega</h3>
-                  <p>Internet fibra 600 Mega</p>
+                  <p>Internet fibra 300 Mega</p>
                 </div>
               </div>
               <div class="second-row">
@@ -201,7 +201,11 @@
                   </h3>
                 </div>
                 <div class="btn">
-                  <a href="#" class="btn-filled azul">Quero</a>
+                  <a
+                    href="https://americanet.net.br/form/fibra-300"
+                    class="btn-filled azul"
+                    >Quero</a
+                  >
                 </div>
                 <button type="button" class="info" data-modal="modal-plano-1">
                   +Informações
@@ -268,7 +272,11 @@
                   </h3>
                 </div>
                 <div class="btn">
-                  <a href="#" class="btn-filled azul">Quero</a>
+                  <a
+                    href="https://americanet.net.br/form/fibra-600"
+                    class="btn-filled azul"
+                    >Quero</a
+                  >
                 </div>
                 <button type="button" class="info" data-modal="modal-plano-2">
                   +Informações
@@ -366,7 +374,11 @@
                   </h3>
                 </div>
                 <div class="btn">
-                  <a href="#" class="btn-filled azul">Quero</a>
+                  <a
+                    href="https://americanet.net.br/form/combo-300"
+                    class="btn-filled azul"
+                    >Quero</a
+                  >
                 </div>
                 <button type="button" class="info" data-modal="modal-plano-3">
                   +Informações
@@ -1079,18 +1091,21 @@
           grabCursor: true,
           // Responsive breakpoints
           breakpoints: {
-            // when window width is >= 320px
             320: {
-              slidesPerView: 1,
               spaceBetween: 10,
+              direction: "vertical",
+              slidesPerView: "auto",
             },
-            // when window width is >= 480px
             480: {
-              slidesPerView: 1,
               spaceBetween: 10,
+              direction: "vertical",
+              slidesPerView: "auto",
             },
-            // when window width is >= 640px
-            640: {
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            1000: {
               slidesPerView: 3,
               spaceBetween: 40,
             },
